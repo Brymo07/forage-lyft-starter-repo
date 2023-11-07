@@ -22,7 +22,7 @@ class CarFactory:
         return car
     
     @staticmethod
-    def create_palindrom(current_date, last_service_date, warning_light_is_on):
+    def create_palindrome(current_date, last_service_date, warning_light_is_on):
         engine = SternmanEngine(warning_light_is_on)
         battery = SpindlerBattery(current_date, last_service_date)
         car = Car(engine, battery)
